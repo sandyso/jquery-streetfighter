@@ -2,7 +2,14 @@ body {
 	background-color: black;
 }
 
-
+.text {
+display: block;
+line-height: 45px;
+font-family: "Open-Sans", "Helvetiva-Neue", sans-serif;
+font-weight: bold;
+font-size: 24px;
+text-transform: uppercase;
+}
 
 .main {
 	background-color: white;
