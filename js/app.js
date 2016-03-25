@@ -29,7 +29,35 @@ $(document).ready(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 	});
-});
+
+	$(document).keydown(function(e) {
+        
+        if (e.which == 88)
+            changePose('cool');
+
+        })
+    });
+
+    $(document).keyup(function(e) {
+        if (e.which == 88) {
+            changePose('still');
+        }
+    });
+
+
+function changePose(stance) {
+
+    if (stance === 'cool') {
+        $('.ryu-ready').hide();
+        $('.ryu-cool').show();
+
+    } else {
+
+        $('.ryu-ready').show();
+        $('.ryu-cool').hide();
+
+    }
+}
 
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;

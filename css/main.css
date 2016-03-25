@@ -62,3 +62,11 @@ body {
 .ryu-throwing {
 	background-repeat: no-repeat;
 }
+
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+	width: 659px;
+	height: 494px;
+	display: none;
+	background-repeat: no-repeat;
+}
